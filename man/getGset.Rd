@@ -26,4 +26,7 @@ This function allows you to source a GEO Object from GEO when you only know the 
 \examples{
 allGset <- getGset("GSE18380", GSEMatrix=TRUE, getGPL=TRUE, platformAnnotation = "NCBI generated")
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

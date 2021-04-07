@@ -15,4 +15,7 @@ This function allows you to extract experiment information from a GEO object
 \examples{
 experimentInformation <- getExperimentInformation(gsetData)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

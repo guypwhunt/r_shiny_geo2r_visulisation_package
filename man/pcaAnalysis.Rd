@@ -15,4 +15,7 @@ A function to perform prcomp principle component analysis on an expression objec
 \examples{
 pcaDataInput <- pcaAnalysis(knnDataInput)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

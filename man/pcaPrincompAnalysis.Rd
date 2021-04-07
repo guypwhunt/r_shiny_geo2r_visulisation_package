@@ -15,4 +15,7 @@ A function to perform Princomp principle component analysis on an expression obj
 \examples{
 pcaPrincompDataInput <- pcaPrincompAnalysis(knnDataInput)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

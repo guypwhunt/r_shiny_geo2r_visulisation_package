@@ -17,4 +17,7 @@ A function to impute missing expression data, using nearest neighbor averaging.
 \examples{
 knnDataInput <- knnDataTransformation(dataInput, knnTransformation)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

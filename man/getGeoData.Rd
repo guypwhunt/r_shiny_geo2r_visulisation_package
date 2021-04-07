@@ -17,4 +17,7 @@ This function allows you to source a GEO Object from GEO when you know the speci
 \examples{
 getGeoData("GSE18380", "GPL4694")
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

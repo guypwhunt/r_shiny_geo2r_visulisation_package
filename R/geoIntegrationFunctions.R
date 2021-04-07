@@ -6,6 +6,7 @@
 #' @keywords GEO
 #' @export
 #' @examples getGeoData("GSE18380", "GPL4694")
+#' @author Guy Hunt
 getGeoData <- function(geoAccessionCode, platform) {
   library(GEOquery)
   gset <- getGEO(geoAccessionCode, GSEMatrix =TRUE, getGPL=FALSE)
@@ -24,6 +25,7 @@ getGeoData <- function(geoAccessionCode, platform) {
 #' @keywords GEO
 #' @export
 #' @examples allGset <- getGset("GSE18380", GSEMatrix=TRUE, getGPL=TRUE, platformAnnotation = "NCBI generated")
+#' @author Guy Hunt
 getGset <- function(geoAccessionCode, GSEMatrix=TRUE, getGPL=TRUE, platformAnnotation = "NCBI generated") {
   library(GEOquery)
   if (platformAnnotation == "Submitter supplied") {
@@ -44,6 +46,7 @@ getGset <- function(geoAccessionCode, GSEMatrix=TRUE, getGPL=TRUE, platformAnnot
 #' @keywords GEO
 #' @export
 #' @examples platforms <- getPlatforms(allGset)
+#' @author Guy Hunt
 getPlatforms <- function(gset) {
   library(GEOquery)
   platforms <- c()
@@ -63,6 +66,7 @@ getPlatforms <- function(gset) {
 #' @keywords GEO
 #' @export
 #' @examples gsetData <- getPlatformGset(gset, platforms[1])
+#' @author Guy Hunt
 getPlatformGset <- function(gset, platform) {
   library(GEOquery)
   if (length(gset) > 1) idx <- grep(platform[1], attr(gset, "names")) else idx <- 1
@@ -77,6 +81,7 @@ getPlatformGset <- function(gset, platform) {
 #' @keywords GEO
 #' @export
 #' @examples experimentInformation <- getExperimentInformation(gsetData)
+#' @author Guy Hunt
 getExperimentInformation <- function(gset) {
   library(GEOquery)
   experimentalData <- experimentData(gset)
@@ -90,6 +95,7 @@ getExperimentInformation <- function(gset) {
 #' @keywords GEO
 #' @export
 #' @examples extractedExperimentInformation <- extractExperimentInformation(experimentInformation)
+#' @author Guy Hunt
 extractExperimentInformation <- function(experimentData) {
   library(GEOquery)
   name <- paste("<b>", "Author's Name:", "</b>", "<p>", experimentData@name, "</p>")
@@ -109,6 +115,7 @@ extractExperimentInformation <- function(experimentData) {
 #' @keywords GEO
 #' @export
 #' @examples columnInfo <- getColumnDetails(gsetData)
+#' @author Guy Hunt
 getColumnDetails <- function(gset){
   library(GEOquery)
   phenoDataset <- phenoData(gset)
@@ -138,6 +145,7 @@ getColumnDetails <- function(gset){
 #' @keywords GEO
 #' @export
 #' @examples expressionData <- extractExpressionData(gsetData)
+#' @author Guy Hunt
 extractExpressionData <- function(gset) {
   library(GEOquery)
   ex <- exprs(gset)
@@ -150,6 +158,7 @@ extractExpressionData <- function(gset) {
 #' @keywords GEO
 #' @export
 #' @examples sampleInfo <- extractSampleInfo(gsetData)
+#' @author Guy Hunt
 extractSampleInfo <- function(gset) {
   library(GEOquery)
   sampleInfo <- pData(gset)
@@ -162,6 +171,7 @@ extractSampleInfo <- function(gset) {
 #' @keywords GEO
 #' @export
 #' @examples geneAnnotation <- extractGeneAnnotation(gsetData)
+#' @author Guy Hunt
 extractGeneAnnotation <- function(gset) {
   library(GEOquery)
   geneAnnotation <- fData(gset)

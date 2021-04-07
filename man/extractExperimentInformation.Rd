@@ -15,4 +15,7 @@ This function allows you to convert experiment information into HTML
 \examples{
 extractedExperimentInformation <- extractExperimentInformation(experimentInformation)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

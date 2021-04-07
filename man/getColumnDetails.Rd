@@ -15,4 +15,7 @@ This function allows you to extract the studies sample information from a GEO ob
 \examples{
 columnInfo <- getColumnDetails(gsetData)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

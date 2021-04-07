@@ -15,4 +15,7 @@ This function allows you to extract the studies Gene information from a GEO obje
 \examples{
 geneAnnotation <- extractGeneAnnotation(gsetData)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

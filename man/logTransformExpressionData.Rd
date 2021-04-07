@@ -17,4 +17,7 @@ This function allows you to log transform expression objects
 \examples{
 dataInput <- logTransformExpressionData(expressionData, "Auto-Detect")
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

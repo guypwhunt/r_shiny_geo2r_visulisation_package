@@ -15,4 +15,7 @@ This function allows you to extract the platforms codes from a GEO object
 \examples{
 platforms <- getPlatforms(allGset)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

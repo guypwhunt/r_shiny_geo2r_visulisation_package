@@ -6,6 +6,7 @@
 #' @keywords GEO
 #' @export
 #' @examples dataInput <- logTransformExpressionData(expressionData, "Auto-Detect")
+#' @author Guy Hunt
 logTransformExpressionData <- function(ex, logTransformation) {
   library(impute)
   library(limma)
@@ -39,6 +40,7 @@ logTransformExpressionData <- function(ex, logTransformation) {
 #' @keywords GEO
 #' @export
 #' @examples autoLogInformation <- isLogTransformAutoApplied(expressionData)
+#' @author Guy Hunt
 isLogTransformAutoApplied <- function(ex) {
   library(impute)
   library(limma)
@@ -63,6 +65,7 @@ isLogTransformAutoApplied <- function(ex) {
 #' @keywords GEO
 #' @export
 #' @examples knnDataInput <- knnDataTransformation(dataInput, knnTransformation)
+#' @author Guy Hunt
 knnDataTransformation <- function(ex, knnTransformation) {
   library(impute)
   library(limma)
@@ -90,6 +93,7 @@ knnDataTransformation <- function(ex, knnTransformation) {
 #' @keywords GEO
 #' @export
 #' @examples pcaDataInput <- pcaAnalysis(knnDataInput)
+#' @author Guy Hunt
 pcaAnalysis <- function(ex){
   library(impute)
   library(limma)
@@ -105,6 +109,7 @@ pcaAnalysis <- function(ex){
 #' @keywords GEO
 #' @export
 #' @examples pcaPrincompDataInput <- pcaPrincompAnalysis(knnDataInput)
+#' @author Guy Hunt
 pcaPrincompAnalysis <- function(ex){
   library(impute)
   library(limma)
@@ -120,6 +125,7 @@ pcaPrincompAnalysis <- function(ex){
 #' @keywords GEO
 #' @export
 #' @examples naOmitInput <- naOmitTransformation(knnDataInput)
+#' @author Guy Hunt
 naOmitTransformation <- function(ex){
   library(impute)
   library(limma)

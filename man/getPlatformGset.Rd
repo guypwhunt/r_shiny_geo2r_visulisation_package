@@ -17,4 +17,7 @@ This function allows you to extract a platform's GEO object from a GEO object
 \examples{
 gsetData <- getPlatformGset(gset, platforms[1])
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

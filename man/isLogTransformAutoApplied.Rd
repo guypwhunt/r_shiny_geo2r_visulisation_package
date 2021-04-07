@@ -15,4 +15,7 @@ This function allows you to determine if log transformation should be performed 
 \examples{
 autoLogInformation <- isLogTransformAutoApplied(expressionData)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

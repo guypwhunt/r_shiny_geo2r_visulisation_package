@@ -15,4 +15,7 @@ This function allows you to extract the studies expression object from a GEO obj
 \examples{
 expressionData <- extractExpressionData(gsetData)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}

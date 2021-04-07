@@ -15,4 +15,7 @@ A function to perform remove rows that contain a null value from an expression o
 \examples{
 naOmitInput <- naOmitTransformation(knnDataInput)
 }
+\author{
+Guy Hunt
+}
 \keyword{GEO}
