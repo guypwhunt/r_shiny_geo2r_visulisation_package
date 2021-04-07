@@ -116,15 +116,15 @@ getColumnDetails <- function(gset){
   columnNames <- c("title", "source_name_ch1", "characteristics_ch1", "characteristics_ch1.1")
   finalColumnNames <- c()
   i <- 1
-
+  
   for (name in columnNames) {
     if (name %in% colnames(phenoData)) {
       finalColumnNames <- c(finalColumnNames,name)
     }
   }
-
+  
   df <- data.frame(column=row.names(phenoData))
-
+  
   for (name in finalColumnNames){
     df <- data.frame(df, phenoData[name])
   }
